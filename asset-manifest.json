@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/uas_deploy/static/css/main.a1af6a5d.css",
-    "main.js": "/uas_deploy/static/js/main.7494fe95.js",
+    "main.js": "/uas_deploy/static/js/main.8a5187c0.js",
     "index.html": "/uas_deploy/index.html",
     "main.a1af6a5d.css.map": "/uas_deploy/static/css/main.a1af6a5d.css.map",
-    "main.7494fe95.js.map": "/uas_deploy/static/js/main.7494fe95.js.map"
+    "main.8a5187c0.js.map": "/uas_deploy/static/js/main.8a5187c0.js.map"
   },
   "entrypoints": [
     "static/css/main.a1af6a5d.css",
-    "static/js/main.7494fe95.js"
+    "static/js/main.8a5187c0.js"
   ]
 }
