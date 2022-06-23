@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Alert from "../Alert/Alert";
 import StyledAddCovidForm from "./AddCovidForm.styled";
 import { updateProvinces } from "../../features/ProvincesSlice";
-// import { useRef } from "react";
+import { useRef } from "react";
 import Button from "../ui/Button";
 
 const AddCovidForm = () => {
@@ -17,7 +17,7 @@ const AddCovidForm = () => {
   const [isprovinceseError, setIsprovincesError] = useState(false);
   const [isJumlahError, setIsJumlahError] = useState(false);
   const [isStatusError, setIsStatusError] = useState(false);
-  // const ref = useRef(null);
+  const ref = useRef(null);
 
   function validate() {
     if (selectedProvinces === "") {
@@ -52,8 +52,8 @@ const AddCovidForm = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     validate() && SubmitProvinces();
-    // ref.current.value = "";
-    // setSelectedJumlah("");
+    ref.current.value = "";
+    setSelectedJumlah("");
   };
 
   return (
@@ -72,7 +72,7 @@ const AddCovidForm = () => {
                   defaultValue={"default"}
                   name="provinces"
                   id="provinces"
-                  // ref={ref}
+                  ref={ref}
                   onClick={(e) => setSelectedProvinces(e.target.value)}
                 >
                   <option value={"default"} disabled>
@@ -110,7 +110,7 @@ const AddCovidForm = () => {
                   id="jumlah"
                   name="jumlah"
                   type="number"
-                  // ref={ref}
+                  ref={ref}
                   onChange={(e) => setSelectedJumlah(e.target.value)}
                 />
                 {isJumlahError && <Alert>Jumlah Wajib Diisi</Alert>}
