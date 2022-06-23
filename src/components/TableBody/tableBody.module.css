@@ -1,0 +1,130 @@
+.container {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+table,
+td,
+th {
+  border: 0.5px solid #ddd;
+  text-align: left;
+  font-size: 8pt;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 3px;
+  width: 100%;
+}
+th {
+  text-align: center;
+}
+
+.covid__table {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.table {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.table {
+  border-collapse: collapse;
+  background-color: white;
+  table-layout: auto;
+  width: 100%;
+}
+
+.covid__Provinsi {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #06d6a0;
+  font-size: 1.44rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+  color: #2196f3;
+  font-size: 1rem;
+}
+
+.table__no {
+  width: 3%;
+  text-align: center;
+}
+
+.td__angka {
+  text-align: center;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .container {
+    margin: 3rem auto;
+  }
+  .covid__Provinsi {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    color: #06d6a0;
+    font-size: 2.44rem;
+  }
+
+  .description {
+    margin-bottom: 1rem;
+    color: #2196f3;
+    font-size: 1.59rem;
+  }
+  .table,
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .table {
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: auto;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+  th {
+    text-align: center;
+  }
+
+  .table__no {
+    width: 3%;
+    text-align: center;
+  }
+
+  .td__angka {
+    text-align: center;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+}
